@@ -1,20 +1,51 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import React, { useState } from "react";
+import { View, /* AppLoading */ } from 'react-native';
+/* import * as Font from "expo-font"; */
 
-export default function App() {
+import Header from "./components/header/index";
+import StartGameScreen from "./screens/startGameScreen/index";
+import GameScreen from "./screens/startGameScreen/index";
+
+/* const fetchFont = () => { 
+  return Font.loadAsync({
+    "lato": require(".\assets\fonts\Lato-Regular.ttf")
+  })
+}
+ */
+const App = () => {
+  const [userNumber,setUserNumber] = useState();
+  const [dataLoaded,setDataLoaded] = useState(false);
+/*   const [loaded, error] = useFonts({
+    "lato": require(".\assets\fonts\Lato-Regular.ttf")
+  }) */
+
+  const handlerStartGame = (selectedNumber) => {
+    setUserNumber(selectedNumber);
+  }
+
+  let content = <StartGameScreen onStartGame={handlerStartGame}/>
+
+  if (userNumber) {
+    content = <GameScreen userOption={userNumber}/>
+  }
+
+/*   if(!dataLoaded){
+    return(
+      <AppLoading
+      startAsync={fetchFont}
+      onFinish={() => setDataLoaded(true)}
+      onError={(err) => console.log(err)}
+      />
+    )
+  } */
+  
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
+    <View style={{flex: 1}}>
+      <Header 
+      title="Bienvenido" />
+      {content}
     </View>
   );
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+export default App;
