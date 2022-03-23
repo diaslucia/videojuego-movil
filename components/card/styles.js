@@ -1,14 +1,14 @@
 import { StyleSheet } from "react-native";
-import { colors } from "../../constants/theme";
+import { colors, margin } from "../../constants/theme";
 
 const styles = StyleSheet.create({
     cardContainer: {
-        height: 200,
         backgroundColor: colors.secondaryBackground,
+        marginVertical: margin.medium,
+        height: 250,
         width: 300,
         elevation: 2,
         justifyContent: "center",
-        marginVertical: 30,
     },
 })
 

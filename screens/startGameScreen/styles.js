@@ -1,5 +1,5 @@
 import { StyleSheet } from "react-native";
-import { colors } from "../../constants/theme";
+import { colors, font, fontSize } from "../../constants/theme";
 
 const styles = StyleSheet.create({
     mainScreenContainer: {
@@ -13,15 +13,23 @@ const styles = StyleSheet.create({
         justifyContent: "space-evenly",
     },
     mainScreenTitle: {
-        fontSize: 20,
+        fontSize: fontSize.title,
+        fontFamily: font.title,
         color: colors.primary,
         textAlign: "center",
         textTransform: "uppercase",
     },
     confirmTitle: {
-        fontSize: 18,
+        fontSize: fontSize.title,
+        fontFamily: font.title,
+        color: colors.primary,
         textAlign: "center",
-        marginVertical: 15,
+        textTransform: "uppercase",
+    },
+    newCard: {
+        flexDirection: "column",
+        alignItems: "center",
+        justifyContent: "space-evenly",
     }
 })
 

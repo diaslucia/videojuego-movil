@@ -19,15 +19,16 @@ const GameScreen = ( {userOption} ) => {
 
     return(
         <View style={styles.gameScreenContainer}>
-            <Text>La suposición del oponente</Text>
-            <Text>{currentGuess}</Text>
-            <Card>
+            <Text style={styles.gameScreenTitle}>La suposición del{'\n'}oponente es {currentGuess}</Text>
+            <Card style={styles.gameScreenCard}>
                 <Button
                 title="Mayor"
+                color="#c2b2a7"
                 onPress={() => null}
                 />
                 <Button
                 title="Menor"
+                color="#c2b2a7"
                 onPress={() => null}
                 />
             </Card>

@@ -23,11 +23,12 @@ const StartGameScreen = ( { onStartGame } ) => {
         setConfirmed(true);
         setSelectedNumber(chosenNumber);
         setEnteredValue("");
+        Keyboard.dismiss();
     }
 
     const confirmedOutput = confirmed ? (
-        <Card>
-            <Text style={styles.confirmTitle}>Elegiste el número {selectedNumber}</Text>
+        <Card style={styles.newCard}>
+            <Text style={styles.confirmTitle}>Elegiste el número{'\n'}{selectedNumber}</Text>
             <View>
                 <Button
                 title='Empezar Juego'

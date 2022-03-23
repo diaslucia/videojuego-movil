@@ -1,21 +1,20 @@
 import { StyleSheet } from "react-native";
-import { color } from "react-native/Libraries/Components/View/ReactNativeStyleAttributes";
-import { colors } from "../../constants/theme";
+import { colors, font, fontSize } from "../../constants/theme";
 
 const styles = StyleSheet.create({
     headerContainer: {
-        flex: 1,
         backgroundColor: colors.primary,
+        flex: 1,
         display: "flex",
         alignItems: "center",
         justifyContent: "center",
     },
     headerText: {
         color: colors.secondary,
+        fontFamily: font.mainTitle,
+        fontSize: fontSize.large,
         textAlign: "center",
-        fontSize: 25,
         textTransform: "uppercase",
-
     }
 })
 

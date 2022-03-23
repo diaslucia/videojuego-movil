@@ -1,10 +1,13 @@
 import { StyleSheet } from "react-native";
+import { margin, font, fontSize } from "../../constants/theme";
 
 const styles = StyleSheet.create({
     mainScreenInput: {
-        marginVertical: 30,
+        fontSize: fontSize.text,
+        fontFamily: font.text,
+        marginVertical: margin.large,
         textAlign: "center",
-        fontSize: 15,
+        
     },
 })
 
