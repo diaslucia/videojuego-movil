@@ -2,7 +2,7 @@
  
 ## Project status 🚧
 
-On progress...
+Finished
 
 ## Tecnologies 🛠️
 

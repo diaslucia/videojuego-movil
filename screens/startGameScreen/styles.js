@@ -2,15 +2,15 @@ import { StyleSheet } from "react-native";
 import { colors, font, fontSize } from "../../constants/theme";
 
 const styles = StyleSheet.create({
-    mainScreenContainer: {
-        flex: 4,
+    mainScreenScroll: {
+        flexGrow: 1,
         justifyContent: "center",
         alignItems: "center",
     },
     buttonContainer: {
         flexDirection: "row",
         alignItems: "center",
-        justifyContent: "space-evenly",
+        justifyContent: "space-evenly"
     },
     mainScreenTitle: {
         fontSize: fontSize.title,
@@ -30,7 +30,7 @@ const styles = StyleSheet.create({
         flexDirection: "column",
         alignItems: "center",
         justifyContent: "space-evenly",
-    }
+    },
 })
 
 export default styles;

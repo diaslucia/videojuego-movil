@@ -1,3 +1,6 @@
+import { Dimensions } from "react-native";
+const { width, height } = Dimensions.get("screen");
+
 export const colors = {
     primary: '#ba672f',
     secondary: '#fff',
@@ -23,7 +26,7 @@ export const fontSize = {
 }
 
 export const padding = {
-    small: 10,
+    small: height > 600 ? 10 : 15,
     medium: 20,
     large: 30
 }
