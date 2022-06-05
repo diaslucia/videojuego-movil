@@ -4,7 +4,7 @@ Gaming App created for a React Native course.
 
 ## Website Deploy 🏁
 
-![JuegoApp](https://user-images.githubusercontent.com/88150989/172033377-ca171896-c4b3-43ee-8457-22a2f6532895.gif)
+![JuegoApp](https://user-images.githubusercontent.com/88150989/172034290-4ab45997-d89c-40a7-96ab-0a05ec31a184.gif)
 
 ## Tecnologies 🛠️
 
