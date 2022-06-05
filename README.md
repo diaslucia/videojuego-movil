@@ -1,20 +1,16 @@
 # Gaming App 🎮
  
-## Project status 🚧
+Gaming App created for a React Native course.
 
-Finished
+## Website Deploy 🏁
+
+![JuegoApp](https://user-images.githubusercontent.com/88150989/172033377-ca171896-c4b3-43ee-8457-22a2f6532895.gif)
 
 ## Tecnologies 🛠️
 
-List of tecnologies used for this project:
+- [React Native](https://reactnative.dev/)
 
-- [Node JS](https://nodejs.org/en/): Version 16.14.0
-
-- [React](https://es.reactjs.org/): Version 17.0.1
-
-- [React Native](https://reactnative.dev/): Version 0.64.3
-
-- [React Expo](https://expo.dev/): Version 44.0.0
+- [React Expo](https://expo.dev/)
 
 ## Instalation & Ejecution 🚀
 
@@ -35,12 +31,16 @@ $cd yourProjectDirectory
 ```
 $npm install -g expo-cli
 ```
-6. Install Expo Fonts
-```
-$npm install expo-font
-```
-6. Ejecute the app (Ctrl + C to stop server)
+5. Ejecute the app (Ctrl + C to stop server)
 ```
 $npm start
 ```
-7. Install Expo Go App in your cellphone and scan the QR to visualice your project
+6. Install Expo Go App in your cellphone and scan the QR to visualice your project
+
+## Libraries 📚
+
+# Expo Fonts
+```
+$npm install expo-font
+```
+
