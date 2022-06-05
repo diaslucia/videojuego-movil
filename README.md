@@ -39,7 +39,7 @@ $npm start
 
 ## Libraries 📚
 
-# Expo Fonts
+### Expo Fonts
 ```
 $npm install expo-font
 ```
